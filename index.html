@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your finances</title>
+
+    <script src="https://kit.fontawesome.com/cd4426d543.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+
+<body class="shadow">
+
+    <div class="wrapper">
+
+
+        <header class="header">
+    <h1 class="header__heading"><i class="header__icon fa-solid fa-money-bill-1"></i>Your finances </h1>
+    <nav class="nav">
+        <a href="#index.html" class="nav__link"><i class="nav__icon fa-solid fa-house"></i>Home</a>
+        <a href="#profile.html" class="nav__link"><i class="nav__icon fa-solid fa-user"></i>Profile</a>
+    </nav>
+</header>
+
+        <main>
+            <section class="panel">
+                <article class="total">
+                    <h2 class="total__title">Total balance</h2>
+                    <p class="total__sum">0<span class="total__currency">PLN</span></p>
+                </article>
+                <article class="buttons">
+                    <button class="btn btn--add"><i class="btn-icon fa-solid fa-plus"></i>Add transaction</button>
+                    <button class="btn btn--delete-all"><i class="btn-icon fa-solid fa-xmark"></i>Delete all</button>
+                    <button class="btn btn--search"><i class="btn-icon fa-solid fa-search"></i>Search</button>
+                    <button class="btn btn--motive-light"><i class="btn-icon fa-regular fa-circle"></i>Light
+                        mode</button>
+                    <button class="btn btn--motive-dark"><i class="btn-icon fa-solid fa-circle"></i>Dark mode</button>
+                </article>
+            </section>
+
+            <section class="transactions">
+                <article class="transactions__area income-area">
+                    <h3 class="transactions__title">Incomes</h3>
+                    <p class="transactions__info">No incomes provided.</p>
+                    <!-- <article class="transaction" id="0">
+                        <p class="transaction__name"><i class="transaction__icon fa-regular fa-credit-card"></i>Salary
+                        </p>
+                        <p class="transaction__amount">4500zł
+                            <button class="transaction__btn--delete"><i class="fas fa-times"></i></button>
+                        </p>
+                    </article>
+                    <article class="transaction" id="0">
+                        <p class="transaction__name"><i class="transaction__icon fa-regular fa-credit-card"></i>Refund
+                        </p>
+                        <p class="transaction__amount">120zł
+                            <button class="transaction__btn--delete"><i class="fas fa-times"></i></button>
+                        </p>
+                    </article> -->
+                </article>
+
+                <article class="transactions__area expenses-area">
+                    <h3 class="transactions__title">Expenses</h3>
+                    <p class="transactions__info">No expenses provided.</p>
+                    <!-- <article class="transaction" id="0">
+                        <p class="transaction__name"><i
+                                class="transaction__icon fa-solid fa-cart-arrow-down"></i>Shopping</p>
+                        <p class="transaction__amount">-500zł
+                            <button class="transaction__btn--delete"><i class="fas fa-times"></i></button>
+                        </p>
+                    </article>
+                    <article class="transaction" id="0">
+                        <p class="transaction__name"><i class="transaction__icon fa-solid fa-car"></i>Car</p>
+                        <p class="transaction__amount">-800zł
+                            <button class="transaction__btn--delete"><i class="fas fa-times"></i></button>
+                        </p>
+                    </article>
+                    <article class="transaction" id="0">
+                        <p class="transaction__name"><i class="transaction__icon  fa-solid fa-file-invoice"></i>Invoices
+                        </p>
+                        <p class="transaction__amount">-1500zł
+                            <button class="transaction__btn--delete"><i class="fas fa-times"></i></button>
+                        </p>
+                    </article>
+                    <article class="transaction" id="0">
+                        <p class="transaction__name"><i class="transaction__icon  fa-solid fa-receipt"></i>Other</p>
+                        <p class="transaction__amount">-752zł
+                            <button class="transaction__btn--delete"><i class="fas fa-times"></i></button>
+                        </p>
+                    </article> -->
+
+                </article>
+            </section>
+
+            <section class="rate">
+                <h4 class="rate__title">Exchange rate</h4>
+                <p class="rate__info">Check here current exchange rate</p>
+
+                <article class="rate__box">
+                    <article class="rate__first">
+                        <input class="rate__input" type="number" class="amount-one" value="1">
+                        <select class="rate__select"  id="currency-one">
+                            <option value="PLN" selected>PLN</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CHF">CHF</option>
+                            <option value="HUF">HUF</option>
+                            <option value="DKK">DKK</option>
+                            <option value="SEK">SEK</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </article>
+
+                    <button class="rate__btn"><i class="fas fa-retweet"></i></button>
+
+                    <article class="rate__second">
+                        <input class="rate__input" type="number" class="amount-two" value="1">
+                        <select class="rate__select"  id="currency-two">
+                            <option value="PLN">PLN</option>
+                            <option value="EUR" selected>EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="CHF">CHF</option>
+                            <option value="HUF">HUF</option>
+                            <option value="DKK">DKK</option>
+                            <option value="SEK">SEK</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </article>
+                </article>
+
+                <p class="rate__result">1 PLN = 1 PLN</p>
+            </section>
+
+            <section class="add">
+                <h4 class="add__title">Add transaction</h4>
+                <label class="add__label" for="name">Title:</label>
+                <p class="add__info">Enter transaction title:</p>
+                <input class="add__input" type="text" id="name" placeholder="fuel">
+
+                <label class="add__label" for="name">Amount:</label>
+                <p class="add__info">Enter transaction amount. If transaction is an expense, please put a minus sign in
+                    front of a number. </p>
+                <input class="add__input" type="number" id="amount" step="0.01" placeholder="0.00">
+
+                <label class="add__label" for="category">Choose category:</label>
+                <select class="add__input" id="category">
+                    <option value="none" selected disabled>---</option>
+                    <option value="salary"> + Salary</option>
+                    <option value="refund"> + Refund</option>
+                    <option value="bonus"> + Bonus</option>
+                    <option value="otherplus"> + Other</option>
+                    <option value="shopping"> - Shopping</option>
+                    <option value="car"> - Car</option>
+                    <option value="invoices"> - Invoices</option>
+                    <option value="otherminus"> - Other</option>
+                </select>
+                <p class="add__error">Check all forms</p>
+
+                <article class="add__btns">
+                    <button class="add__btn add__btns--save"><i class="add__btn--icon fa-solid fa-check"></i>Save</button>
+                    <button class="add__btn add__btns--cancel"><i class="add__btn--icon far fa-window-close"></i> Cancel</button>
+                </article>
+
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+    <p class="footer__text">Coded by <a class="footer__link" href="https://github.com/martinafm">Martyna F.</a> 2023</p>
+</footer>
+
+    <!-- <div class="shadow"></div> -->
+
+    <script src="/dist/js/main.min.js"></script>
+</body>
+
+</html>
