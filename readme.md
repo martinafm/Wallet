@@ -1,7 +1,7 @@
 # Wallet - your finances
 My next project, which I created due to practice my JavaScript skills. Here you can find features as adding new transaction, removing, updated total balance, current and interactive exchange rate thanks to API and JSON. As a tool I used one of task runners - Gulp.
 
-Click [this]() link to see it live.
+Click [this](https://martinafm.github.io/Wallet/) link to see it live.
 
 
 ## Table of Contents
